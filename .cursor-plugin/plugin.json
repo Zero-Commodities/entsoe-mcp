@@ -1,0 +1,15 @@
+{
+  "name": "entsoe-mcp",
+  "version": "1.0.0",
+  "description": "European power-market data for Cursor: prices, load, generation, cross-border flows, balancing and outages across European bidding zones. Remote, read-only, no API key.",
+  "author": {
+    "name": "Zero Commodities",
+    "email": "support@entsoemcp.com"
+  },
+  "homepage": "https://entsoemcp.com",
+  "repository": "https://github.com/Zero-Commodities/entsoe-mcp",
+  "license": "MIT",
+  "keywords": ["energy", "electricity", "power markets", "europe", "entso-e", "mcp"],
+  "logo": "logo.svg",
+  "mcpServers": "./mcp.json"
+}

@@ -27,9 +27,9 @@ Server URL: `https://entsoemcp.com/mcp` (streamable HTTP, no authentication)
 | **Claude** (web and desktop) | Settings → Connectors → **Add custom connector**. Paste the server URL and leave the advanced settings empty. |
 | **ChatGPT** | Settings → Apps → Advanced settings → turn on **Developer mode**. Then **Create app**, paste the server URL and set Authentication to **No Auth**. |
 | **Claude Code** | `claude mcp add --transport http entsoe-mcp https://entsoemcp.com/mcp`, or install the [plugin](#claude-code-plugin). |
-| **Cursor** | [Add to Cursor](https://cursor.com/en/install-mcp?name=entsoe-mcp&config=eyJ1cmwiOiJodHRwczovL2VudHNvZW1jcC5jb20vbWNwIn0=), or paste [`mcp.json`](mcp.json) into `~/.cursor/mcp.json`. |
-| **VS Code** | [Install in VS Code](https://insiders.vscode.dev/redirect/mcp/install?name=entsoe-mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fentsoemcp.com%2Fmcp%22%7D), or copy [`.vscode/mcp.json`](.vscode/mcp.json) into your project. |
-| **Gemini CLI** | `gemini extensions install https://github.com/Zero-Commodities/entsoe-mcp` |
+| **Cursor** | [Add to Cursor](https://cursor.com/en/install-mcp?name=entsoe-mcp&config=eyJ1cmwiOiJodHRwczovL2VudHNvZW1jcC5jb20vbWNwIn0%3D), or paste [`mcp.json`](mcp.json) into `~/.cursor/mcp.json`. |
+| **VS Code** | [Install in VS Code](https://insiders.vscode.dev/redirect/mcp/install?name=entsoe-mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fentsoemcp.com%2Fmcp%22%7D), or run `code --add-mcp '{"name":"entsoe-mcp","type":"http","url":"https://entsoemcp.com/mcp"}'`. |
+| **Gemini CLI** (Gemini Code Assist) | `gemini extensions install https://github.com/Zero-Commodities/entsoe-mcp` |
 | **Perplexity, Microsoft Copilot Studio, Mistral Le Chat** | Click-by-click steps on [entsoemcp.com](https://entsoemcp.com/#connect). |
 
 Clients that read an `mcpServers` block with a `url` take [`mcp.json`](mcp.json) as it is:
@@ -52,6 +52,8 @@ Clients that read an `mcpServers` block with a `url` take [`mcp.json`](mcp.json)
 /plugin install entsoe-mcp@entsoemcp
 ```
 
+From a terminal, the same two steps are `claude plugin marketplace add Zero-Commodities/entsoe-mcp` and `claude plugin install entsoe-mcp@entsoemcp`.
+
 ## Try asking
 
 - "How many negative-price hours did Spain have each month this year?"
@@ -64,8 +66,8 @@ Clients that read an `mcpServers` block with a `url` take [`mcp.json`](mcp.json)
 
 | File | For |
 |---|---|
-| [`mcp.json`](mcp.json) | Cursor and other clients that read an `mcpServers` block |
-| [`.vscode/mcp.json`](.vscode/mcp.json) | VS Code |
+| [`mcp.json`](mcp.json) | Clients that read an `mcpServers` block, and the Cursor plugin |
+| [`.cursor-plugin/`](.cursor-plugin) | Cursor: the plugin manifest |
 | [`.mcp.json`](.mcp.json), [`.claude-plugin/`](.claude-plugin) | Claude Code: the plugin and its marketplace |
 | [`gemini-extension.json`](gemini-extension.json) | Gemini CLI |
 | [`logo.svg`](logo.svg), [`logo.png`](logo.png) | The logo |
