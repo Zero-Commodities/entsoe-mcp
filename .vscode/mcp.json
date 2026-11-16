@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "entsoe-mcp": {
+      "type": "http",
+      "url": "https://entsoemcp.com/mcp"
+    }
+  }
+}

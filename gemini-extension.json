@@ -1,0 +1,10 @@
+{
+  "name": "entsoe-mcp",
+  "version": "1.0.0",
+  "description": "European power-market data: prices, load, generation, cross-border flows, balancing and outages across European bidding zones. Remote, read-only, no API key.",
+  "mcpServers": {
+    "entsoe-mcp": {
+      "httpUrl": "https://entsoemcp.com/mcp"
+    }
+  }
+}

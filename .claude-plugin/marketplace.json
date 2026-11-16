@@ -1,0 +1,18 @@
+{
+  "name": "entsoemcp",
+  "owner": {
+    "name": "Zero Commodities",
+    "email": "support@entsoemcp.com"
+  },
+  "metadata": {
+    "description": "European power-market data for AI agents, from entsoemcp.com."
+  },
+  "plugins": [
+    {
+      "name": "entsoe-mcp",
+      "source": "./",
+      "description": "European power-market data for Claude: prices, load, generation, cross-border flows, balancing and outages across European bidding zones. Remote, read-only, no API key.",
+      "category": "data"
+    }
+  ]
+}

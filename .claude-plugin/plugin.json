@@ -1,0 +1,14 @@
+{
+  "name": "entsoe-mcp",
+  "version": "1.0.0",
+  "description": "European power-market data for Claude: prices, load, generation, cross-border flows, balancing and outages across European bidding zones, plus capture rates, negative-price hours, renewable share and CO2 emissions. Remote, read-only, no API key.",
+  "author": {
+    "name": "Zero Commodities",
+    "email": "support@entsoemcp.com",
+    "url": "https://entsoemcp.com"
+  },
+  "homepage": "https://entsoemcp.com",
+  "repository": "https://github.com/Zero-Commodities/entsoe-mcp",
+  "license": "MIT",
+  "keywords": ["energy", "electricity", "power markets", "europe", "entso-e", "mcp"]
+}
